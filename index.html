@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heba Raouf Bazaar - Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">🛍️ Heba Raouf Bazaar</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#social">Follow Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Heba Raouf Bazaar</h1>
+                <p class="hero-subtitle">Discover Amazing Products & Exclusive Deals</p>
+                <button class="cta-button" onclick="document.getElementById('social').scrollIntoView({behavior: 'smooth'})">Explore Now</button>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-box">🎁</div>
+                <div class="floating-box" style="animation-delay: 1s;">✨</div>
+                <div class="floating-box" style="animation-delay: 2s;">🛍️</div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stat-card">
+                <div class="stat-number">50K+</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Products</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Support</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">99%</div>
+                <div class="stat-label">Satisfaction</div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Welcome to Heba Raouf Bazaar, your ultimate destination for quality products and exceptional shopping experience. We're dedicated to bringing you the best selection of items with unbeatable prices and outstanding customer service.</p>
+        </section>
+
+        <!-- Social Media Section -->
+        <section id="social" class="social-section">
+            <h2>Connect With Us</h2>
+            <p>Follow us on social media for exclusive deals, new products, and daily updates!</p>
+            
+            <div class="social-buttons">
+                <a class="social-btn instagram" href="https://www.instagram.com/hebaraouf_bazaar?igsh=cHRnaGoxejh5Ynk4" target="_blank" rel="noopener noreferrer">
+                    <span class="social-icon">📸</span>
+                    <span class="social-text">
+                        <span class="social-title">Instagram</span>
+                        <span class="social-handle">@hebaraouf_bazaar</span>
+                    </span>
+                    <span class="social-arrow">→</span>
+                </a>
+
+                <a class="social-btn tiktok" href="https://www.tiktok.com/@heba_raouf?_r=1&_t=ZS-95cmjKMnfJy" target="_blank" rel="noopener noreferrer">
+                    <span class="social-icon">🎵</span>
+                    <span class="social-text">
+                        <span class="social-title">TikTok</span>
+                        <span class="social-handle">@heba_raouf</span>
+                    </span>
+                    <span class="social-arrow">→</span>
+                </a>
+
+                <a class="social-btn facebook" href="https://www.facebook.com/share/g/18UgsxFWvU/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                    <span class="social-icon">👍</span>
+                    <span class="social-text">
+                        <span class="social-title">Facebook</span>
+                        <span class="social-handle">Heba Raouf Bazaar</span>
+                    </span>
+                    <span class="social-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Heba Raouf Bazaar. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
