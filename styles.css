@@ -110,6 +110,29 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
+/* Vibrate Button Animation */
+.vibrate-button {
+    animation: vibrate 0.5s infinite !important;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
 .hero-animation {
     position: absolute;
     top: 0;
@@ -132,64 +155,6 @@ body {
     50% {
         transform: translateY(-20px);
     }
-}
-
-/* Stats Section */
-.stats {
-    background: var(--white);
-    padding: 60px 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: -40px auto 0;
-    position: relative;
-    z-index: 3;
-}
-
-.stat-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: var(--white);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    text-align: center;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-10px);
-}
-
-.stat-number {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.stat-label {
-    font-size: 1rem;
-    opacity: 0.9;
-}
-
-/* About Section */
-.about {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 0 2rem;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: var(--dark);
-}
-
-.about p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #666;
 }
 
 /* Social Section */
@@ -294,58 +259,8 @@ body {
     background: linear-gradient(135deg, #1877F2 0%, #0a66c2 100%);
 }
 
-/* Contact Section */
-.contact {
-    padding: 80px 2rem;
-    background: var(--light-bg);
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: var(--dark);
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 1rem;
-    border: 2px solid #ddd;
-    border-radius: var(--border-radius);
-    font-family: inherit;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-}
-
-.submit-btn {
-    padding: 1rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: var(--white);
-    border: none;
-    border-radius: var(--border-radius);
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.submit-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+.whatsapp {
+    background: linear-gradient(135deg, #25D366 0%, #20BA5E 100%);
 }
 
 /* Footer */
@@ -414,10 +329,6 @@ body {
 
     .social-buttons {
         grid-template-columns: 1fr;
-    }
-
-    .stat-card {
-        padding: 1.5rem;
     }
 
     .footer-links {
